@@ -13,7 +13,6 @@ def rk4_vec(t, dt, n, s, fun):
         w[i] = s[i] + dt / 2 * k1[i]
     fun(t + dt / 2, w, k2)
     for i in range(n):
-
         w[i] = s[i] + dt / 2 * k2[i]
     fun(t + dt / 2, w, k3)
     for i in range(n):
